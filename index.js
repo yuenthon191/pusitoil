@@ -115,10 +115,10 @@ var options = {
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
-         }else if(beacon_id == "013e02417c"){
+         }else if(beacon_id == "014fe40247"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจด้านหลังโรงงานของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "ระบบได้บันทึกการตรวจจุดตรวจโครงการหมู่บ้าน"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
           }; 
         reply(reToken, msg, sende_r, beacon_id);   
          }
