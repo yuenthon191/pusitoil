@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycbyqcGR2ZNw4m8SgH6krihGVa1stW3BsY9vPLJWN/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycbwCEd8MoRGrmPhLtEiQWa-4LHRMIXkDd0CEEpY/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,10 +108,10 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "0140de7594"){
+          if(beacon_id == "015153f797"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจสำนักงานขาย/นิติบุคคล ของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "ระบบได้บันทึกการตรวจจุดตรวจ หจก.ภูสิทธิ์ออยล์ ของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
